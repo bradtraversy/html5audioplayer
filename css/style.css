@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+
+body{
+	font-family:arial;
+	font-size:13px;
+	line-height:1.5em;
+	color:#fff;
+	background: #78284a; /* Old browsers */
+	background: -moz-linear-gradient(left, #78284a 0%, #6d8a9f 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#78284a), color-stop(100%,#6d8a9f)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, #78284a 0%,#6d8a9f 100%); /* IE10+ */
+	background: linear-gradient(to right, #78284a 0%,#6d8a9f 100%); /* W3C */
+}
+
+.clearfix{
+	clear:both;
+}
+
+#container{
+	width:330px;
+	min-height:400px;
+	background:#333;
+	overflow:auto;
+	margin:60px auto;
+	border-radius:10px;
+	box-shadow: 0 10px 8px -8px #333;
+}
+
+#audio-image{
+	position:relative;
+	overflow:hidden;
+	height:200px;
+	margin-bottom:15px;
+}
+
+#audio-info{
+	text-align:center;
+}
+
+#audio-info .artist{
+	font-weight:bold;
+}
+
+.cover{
+	width:100%;
+	z-index:1;
+}
+
+input#volume {
+	width:95%;
+	margin-left:2%;
+    -webkit-appearance: none !important;
+    background:#ccc;
+    height:1px;
+	margin-bottom:20px;
+}
+input#volume::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    background:url(../images/knob.png) no-repeat;
+    height:12px;
+    width:12px;
+}
+
+#buttons{
+	width:90%;
+	display: block;
+    margin: 15px auto;
+	margin-left:23px;
+	overflow:auto;
+}
+
+
+button#play{
+	width:70px;
+	height:70px;
+	background:url(../images/play.png) no-repeat;float:left;
+}
+
+button#pause{
+	width:70px;
+	height:70px;
+	background:url(../images/pause.png) no-repeat;float:left;
+}
+
+button#stop{
+	width:70px;
+	height:70px;
+	background:url(../images/stop.png) no-repeat;float:left;
+}
+
+button#prev{
+	width:70px;
+	height:70px;
+	background:url(../images/prev.png) no-repeat;
+	float:left;
+	margin-top:15px;
+}
+
+button#next{
+	width:70px;
+	height:70px;
+	background:url(../images/next.png) no-repeat;
+	float:right;
+	margin-top:15px;
+}
+
+#playlist {
+    list-style-type: none;
+}
+
+#playlist li {
+    cursor: pointer;
+    margin:5px;
+}
+
+#tracker{
+	position:relative;
+	width:100%;
+}
+
+#playlist li.active {
+    font-weight: bold;
+	padding:3px;
+	background:#666;
+}
+
+#progressBar { 
+   width:80%;
+   margin-left:2%;
+   margin-bottom:20px;
+   margin-top:9px;
+   height:10px;
+   background:url(../images/progress_bg.png) no-repeat;
+   float:left;
+}
+
+#progress {
+   background:url(../images/progress.png) no-repeat;
+   height:10px;
+   display:inline-block;
+}
+
+#duration{
+	position:absolute;
+	top:0;
+	right:10px;
+	padding:4px 8px;
+	background:#000;
+	border-radius:5px;
+}
+
